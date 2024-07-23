@@ -1,0 +1,140 @@
+body {
+    background-color: rgb(12, 12, 12);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: hobo;
+    overflow-x: hidden;
+}
+
+.welcome-text {
+    font-size: 50px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.split {
+    margin-top: 5%;
+    font-size: 0.5px;
+    background-color: rgb(56, 56, 71);
+}
+
+.github {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 25%;
+}
+
+.discord {
+    margin-top: 1.2%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+}
+
+#container {
+    background-color: white;
+    color: black;
+    margin-top: 0.7%;
+    padding: 1.5%;
+}
+
+#welcome {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding-top: 13%;
+    padding-bottom: 13%;
+    background-color: rgb(51, 47, 75);
+}
+
+
+#footer {
+    user-select: none;
+    padding: 1.2%;
+    color: white;
+    width: 100%;
+    list-style: none;
+    background-color: black;
+}
+
+#footer ul {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 10%;
+
+}
+
+#footer li:nth-child(1) {
+    padding-left: 5%;
+
+}
+
+#nav {
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    width: 100%;
+    position: fixed;
+    list-style: none;
+    animation: navanim 0.2s;
+    background-image: linear-gradient(to left, rgb(19, 14, 48), rgb(13, 10, 34), rgb(5, 1, 27));
+    display: none;
+    padding: 2%;
+}
+
+#nav li:nth-child(1) {
+    padding-right: 1%;
+}
+
+#nav li:nth-child(2) {
+    color: rgb(56, 53, 53);
+    font-weight: 900;
+    padding-right: 1%;
+
+}
+
+#nav li:nth-child(3) {
+    cursor: pointer;
+    padding-right: 1%;
+}
+
+#nav li:nth-child(4) {
+    cursor: pointer;
+    padding-right: 1%;
+}
+
+#nav li:nth-child(5) {
+    cursor: pointer;
+
+}
+
+@font-face {
+    font-family: hobo;
+    src: url(../fonts/HoboStd.otf);
+}
+
+@keyframes navanim1 {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+@keyframes navanim {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
